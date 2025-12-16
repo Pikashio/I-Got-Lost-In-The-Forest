@@ -26,12 +26,6 @@
             padding: 30px;
             position: relative;
             overflow: hidden;
-            transform: perspective(1000px) rotateX(5deg);
-            animation: wavy 5s infinite ease-in-out;
-        }
-        @keyframes wavy {
-            0%, 100% { transform: perspective(1000px) rotateX(5deg) skewY(0deg); }
-            50% { transform: perspective(1000px) rotateX(5deg) skewY(10deg); }
         }
         img {
             max-width: 100%;
@@ -74,9 +68,6 @@
             bottom: 0;
             background: radial-gradient(circle, rgba(46,139,87,0.2) 0%, rgba(46,139,87,0) 70%);
             z-index: -1;
-        }
-        .album-container::before, .album-container::after {
-            animation: wavy 5s infinite ease-in-out;
         }
         @keyframes wavy {
             0%, 100% { transform: perspective(1000px) rotateX(5deg) skewY(0deg); }
